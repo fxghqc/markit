@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    restart: always
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: markit
+    ports:
+    - "6432:5432"
+    volumes:
+    - pg-data:/var/lib/postgresql/data
+volumes:
+  pg-data:

@@ -1,0 +1,12 @@
+.tag {
+  @apply bg-panel inline-block text-grey-dark text-xs leading-normal py-1 px-2 rounded-sm;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.tag-selected {
+  @apply tag shadow-outline;
+}
+
+.tag:hover, .tag-selected:hover {
+  @apply bg-highlight text-scene;
+}
